@@ -1,0 +1,56 @@
+.login-page {
+    /* font-family: 'Commercial Soft Rounded,sans-serif'; */
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+/* .container form {
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 10px rgb(88, 137, 88);
+    padding: 40px 40px 40px 40px;
+  } */
+
+.form-group {
+    font-size: 15px;
+    /* margin: 20px; */
+
+}
+
+.btn {
+    border: 1px solid rgb(88, 137, 88);
+    border-radius: 0%;
+    /* width: 100%; */
+    background-color: rgb(88, 137, 88);
+    transition: background .2s ease 0s;
+}
+
+.container {
+    margin-top: 80px; 
+}
+
+.forgot-pass {
+    color: black;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 120px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight:normal;
+}
+
+#placeholder {
+    border: 1px solid black;
+    border-radius: 0%;
+    font-size: 100px;
+}
+
+#signup a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+form-group label input {
+    margin-bottom: 10px;
+}

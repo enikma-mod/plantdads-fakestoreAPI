@@ -1,0 +1,70 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Cart</h2>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of cartItems">
+              <td>{{ item.name }}</td>
+              <td>{{ item.price | currency: 'R' }}</td>
+              <td>
+                <button
+                  class="btn btn-sm btn-primary mr-2"
+                  (click)="decrementItem(item)"
+                >
+                  -
+                </button>
+                {{ item.quantity }}
+                <button
+                  class="btn btn-sm btn-primary ml-2"
+                  (click)="incrementItem(item)"
+                >
+                  +
+                </button>
+              </td>
+              <td>{{ item.quantity * item.price | currency: 'R' }}</td>
+              <td>
+                <button
+                  class="btn btn-sm btn-danger"
+                  (click)="removeItem(item)"
+                >
+                  Remove
+                </button>
+              </td>
+            </tr>
+            <tr *ngIf="cartItems.length === 0">
+              <td colspan="5" class="text-center">Your cart is empty</td>
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">Cart Summary</div>
+        <div class="card-body">
+          <p>Total Items: {{ cartItemCount }}</p>
+          <p>Total Price: {{ cartTotal | currency: 'R' }}</p>
+          <button class="btn btn-primary btn-block">Checkout</button>
+          <!-- <button type="button" id="btn-cart2" routerLink="/products" class="btn btn-primary btn-outline-dark ">Continue Shopping</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 
+<button routerLink="/product">Continue Shopping</button> -->
+<div class="btn-ctn-shop">
+  <button type="button" routerLink="/products" class="btn btn-primary ">Continue Shopping</button>
+</div>
