@@ -7,7 +7,8 @@ import { EventEmitter } from '@angular/core';
 export class CartService {
 
   items: any[] = [];
-  cartItemCount = 0;
+  // cartItems: any[] = [];
+  cartItemCount:number = 0;
 
   // cartItems: Product[] = [];
   // cartItemCount: number = 0;
@@ -45,6 +46,8 @@ export class CartService {
     this.cartItemCount += 1;
 
     this.cartUpdated.emit(this.cartItemCount);
+
+  
   }
 
 
