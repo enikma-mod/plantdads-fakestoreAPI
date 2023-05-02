@@ -207,3 +207,12 @@ body {
 .btn-ctn-shop button {
     padding: 15px;
 }
+
+#btn-shop1 {
+    background-color: rgb(88, 137, 88);
+    color: white;
+}
+
+#cart-checkout-btn {
+    background-color: rgb(88, 137, 88);
+}

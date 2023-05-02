@@ -1,7 +1,7 @@
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-8">
-      <h2>Cart</h2>
+      <h2 class="cart-heading">Cart</h2>
       <div class="table-responsive">
         <table class="table">
           <thead>
@@ -56,7 +56,7 @@
         <div class="card-body">
           <p>Total Items: {{ cartItemCount }}</p>
           <p>Total Price: {{ cartTotal | currency: 'R' }}</p>
-          <button class="btn btn-primary btn-block">Checkout</button>
+          <button class="btn btn-primary btn-block" id="cart-checkout-btn">Checkout</button>
           <!-- <button type="button" id="btn-cart2" routerLink="/products" class="btn btn-primary btn-outline-dark ">Continue Shopping</button> -->
         </div>
       </div>
@@ -66,5 +66,5 @@
 <!-- 
 <button routerLink="/product">Continue Shopping</button> -->
 <div class="btn-ctn-shop">
-  <button type="button" routerLink="/products" class="btn btn-primary ">Continue Shopping</button>
+  <button type="button" id="btn-shop1" routerLink="/products" class="btn ">Continue Shopping</button>
 </div>

@@ -30,6 +30,7 @@
 
 .btn-group button {
     /* height: auto; */
+    color: white;
     width: 300px;
     background-color: rgb(88, 137, 88);
     cursor: pointer;
