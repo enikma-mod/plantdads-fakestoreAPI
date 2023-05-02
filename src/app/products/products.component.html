@@ -32,7 +32,7 @@
   </div>
 </div>
 
-<!-- <div class="filter-dropdown">
+<div class="filter-dropdown">
   <button class="filter-btn">
     Apply Filter <i class="fas fa-caret-down"></i>
   </button>
@@ -44,20 +44,20 @@
     <a href="#">Price, high to low</a>
     <a href="#">Date, old to low</a>
   </div>
-</div> -->
+</div>
 
 <div class="container">
   <div class="row">
     <div class="col-lg-3 col-md-4 col-sm-6 mb-4" *ngFor="let product of products">
       <div class="card">
-        <img [src]="product.image" class="card-img-top" alt="{{ product.title }}" width="100" height="200">
+        <img [src]="product.image" class="card-img-top" id="img-size" alt="{{ product.title }}">
         <div class="card-body">
-          <h5 class="card-title">{{ product.title }}</h5>
+          <h5 class="card-title" style="max-width: 25ch; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding-left: 1rem; padding-right: 1rem;">{{ product.title }}</h5>
           <!-- <p class="card-text">{{ product.description }}</p> -->
           <p class="card-text">{{ product.price | currency: 'R' }}</p>
-          <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex justify-content-around align-items-center">
             <div class="btn-group">
-              <button type="button"  class="btn btn-block btn-outline-secondary" (click)="addToCart(product)">Add to Cart</button>
+              <button type="button"  class="btn btn-block btn-outline-dark" (click)="addToCart(product)">Add to Cart</button>
             </div>
         </div>
       </div>

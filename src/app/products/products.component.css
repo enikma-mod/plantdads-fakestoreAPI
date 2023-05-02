@@ -4,12 +4,36 @@
 } */
 
 .card {
-    width: 18rem;
-    margin: 20px;
+    display: flex;
+    width: 20rem;
+    height: 350px;
+    /* margin: 20px; */
+    align-items: center;
 }
 
-.btn-group {
-    width: 100%;
+#img-size {
+    padding-top: 20px;
+    width: 150px;
+    height: 180px;
+}
+
+/* .card-img-top {
+    padding-top: 15px;
+    width: 130px;
+    padding-left: 10px;
+} */
+
+
+/* .btn-group {
+    display: flex;
+} */
+
+.btn-group button {
+    /* height: auto; */
+    width: 300px;
+    background-color: rgb(88, 137, 88);
+    cursor: pointer;
+    margin-bottom: 50px;
 }
 
 /* #img-size {
@@ -50,12 +74,12 @@
     text-align: center;
 }
 
-.card {
+/* .card {
     display: flex;
     gap: 10px;
     margin-left: 10px;
     margin-bottom: 18px;
-}
+} */
 
 #heading-coloring {
     color: green;
@@ -82,8 +106,9 @@
 }
 
 .card-text {
-    font-size: 15px;
-    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    /* font-weight: 300; */
 
 }
 
@@ -139,4 +164,4 @@
 
 .filter-dropdown:hover .filter-btn {
     background-color: #3e8e41;
-}
+} 
